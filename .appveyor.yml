@@ -22,9 +22,9 @@ environment:
 install:
   # We need wheel installed to build wheels
   - "%PYTHON%\\python.exe -m pip install wheel"
-
-build:
   - "%PYTHON%\\python.exe -m setup.py bdist_wheel"
+
+build: off
 
 test_script:
   # Put your test command here.
